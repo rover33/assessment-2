@@ -7,7 +7,7 @@ $(document).keydown(function(run) {
     let redRacer = $(window).width() - ($('#red1').offset().left + $('#red1').outerWidth());
     if(run.keyCode == 90 && redRacer >= 50) { //runes keycode for right arrow and stops redRacer when he hits the wall
         $("#red1").animate({left: '+=2vw'}); 
-        detectWinner(redRacer);
+        // detectWinner(redRacer,blueRacer);
         console.log(redRacer);
         //animated to make #red1 moved across the screen away from margin left at 2vw.
     }
