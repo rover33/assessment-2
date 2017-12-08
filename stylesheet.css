@@ -1,8 +1,12 @@
-Body{
+html {
+    height: 100%;
+    
+  }
+  Body{
     margin:0;
     background-size: cover;
     background-repeat: no-repeat;
-
+    min-height: 100%;
 }
 
 .container{
@@ -11,6 +15,19 @@ Body{
     
 }
 
+a{
+    color:white;
+    font-weight: bold;
+    height: 30rem;
+  
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 30rem;
+}
 
 #red1{
 position: absolute;
