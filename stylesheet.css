@@ -1,22 +1,27 @@
 Body{
     margin:0;
-    
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .container{
     height: 100vh;
     width: 100vw;
+    
 }
 
 
 #red1{
-color: red;
 position: absolute;
+right: 0;
+bottom: 8vh;
+transform: rotateY(180deg);
 }
 
 #blue1{
 color:blue;
 position: absolute;
-margin-top: 8rem;
+bottom: 8vh;
 
 }
