@@ -10,9 +10,15 @@ Body{
 
 
 #red1{
-color:red;
+display:flex;
+color: red;
+position: absolute;
+
 }
 
 #blue1{
+display: flex;
 color:blue;
+position: absolute;
+margin-top: 4rem;
 }

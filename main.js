@@ -4,7 +4,7 @@
 // keycode 90 moves #red1 across the screen.
 $(document).keydown(function(run) { 
     if(run.keyCode == 90) { 
-        $("#red1").animate({position: "+=20"}); //animated to make #red1 moved across the screen away from margin left at 20vw.
+        $("#red1").animate({left: '+=20vw'}); //animated to make #red1 moved across the screen away from margin left at 20vw.
        let redRacer = $("#red1").offset();
         console.log(redRacer.left);
     }
@@ -12,15 +12,17 @@ $(document).keydown(function(run) {
 
 $(document).keydown(function(run) {
     if(run.keyCode == 39) { //runes keycode for right arrow.
-        $("#blue1").animate({position: "+=20"}); //moved #blue1 across the screen at 20vw.
+        $("#blue1").animate({left: '+=20vw'}); //moved #blue1 across the screen at 20vw.
         let blueRacer = $("#blue1").offset();
         console.log(blueRacer.left);
     }
 });
 
+var offRight = ($(window).width()
+($(window).offset().right + $("#red1").outerWidth()));
 
-let winner = ($('.container').width())
-     if ($("#red1") > winner) {
+// let winner = ($('.container').width())
+//      if ($("#red1") > winner) {
      
 
-}
+// }
