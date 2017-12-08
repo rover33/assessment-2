@@ -7,6 +7,7 @@ $(document).keydown(function(run) {
     let redRacer = $(window).width() - ($('#red1').offset().left + $('#red1').outerWidth());
     if(run.keyCode == 90 && redRacer >= 50) { //runes keycode for right arrow and stops redRacer when he hits the wall
         $("#red1").animate({left: '+=2vw'}); 
+        detectWinner(redRacer);
         console.log(redRacer);
         //animated to make #red1 moved across the screen away from margin left at 2vw.
     }
@@ -20,8 +21,13 @@ $(document).keydown(function(run) {
 });
 
 
-// let winner = $()
-//  if
+function detectWinner(redRacer, blueRacer) {
+if(redRacer >= 50 && blueRacer < 50) {
+alert('winner player1');
+} else if(redRacer < 50 && blueRacer >=50){
+    alert('winner player 2');
+}
+};
 
 
 
