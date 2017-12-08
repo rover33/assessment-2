@@ -1,0 +1,314 @@
+
+<!-- saved from url=(0035)http://spritedatabase.net/game/2487 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<!--<base href="http://spritedatabase.net">--><base href=".">
+<script src="./Street Fighter - Sprite Database_files/ca-pub-0004615849072972.js.download"></script><script type="text/javascript" src="./Street Fighter - Sprite Database_files/lightbox.js.download"></script>
+<script type="text/javascript" src="./Street Fighter - Sprite Database_files/jquery-1.7.1.js.download"></script>
+<script src="./Street Fighter - Sprite Database_files/jscookie.js.download"></script>
+<script type="text/javascript" src="./Street Fighter - Sprite Database_files/jquery-1.11.1.min.js.download"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+// light stylesheet
+$("#css-light").click(function() {
+$("link[rel=stylesheet]").attr({href : "2017_white.css"});
+Cookies.set('style', 'light', { expires: 30 });
+});
+ 
+// dark stylesheet
+$("#css-dark").click(function() {
+$("link[rel=stylesheet]").attr({href : "2017.css"});
+Cookies.set('style', 'dark', { expires: 30 });
+});
+});
+</script>
+
+
+<link href="./Street Fighter - Sprite Database_files/2017_white.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">//<![CDATA[
+$(document).ready(function(){
+$('.category').click(function(e)
+{
+var a = (this).getElementsByTagName('span')[0];
+if (a.innerHTML == '+'){a.innerHTML = '-';}
+else if (a.innerHTML == '-'){a.innerHTML = '+';}
+$(this).next('div.selection').slideToggle('fast');
+});
+});
+//]]> 
+</script>
+<script language="javascript"> 
+function toggle2(showHideDiv, switchTextDiv) {
+	var ele = document.getElementById(showHideDiv);
+	var text = document.getElementById(switchTextDiv);
+	if(ele.style.display == "table") {
+    		ele.style.display = "none";
+		text.innerHTML = "<img src='layout/show.gif' border='0' title='Expand' style='vertical-align: middle;'> ";
+  	}
+	else {
+		ele.style.display = "table";
+		text.innerHTML = "<img src='layout/hide.gif' border='0' title='Collapse' style='vertical-align: middle;'> ";
+	}
+}
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+
+    var tabLinks = new Array();
+    var contentDivs = new Array();
+
+    function init() {
+
+      // Grab the tab links and content divs from the page
+      var tabListItems = document.getElementById('tabs').childNodes;
+      for ( var i = 0; i < tabListItems.length; i++ ) {
+        if ( tabListItems[i].nodeName == "LI" ) {
+          var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
+          var id = getHash( tabLink.getAttribute('href') );
+          tabLinks[id] = tabLink;
+          contentDivs[id] = document.getElementById( id );
+        }
+      }
+
+      // Assign onclick events to the tab links, and
+      // highlight the first tab
+      var i = 0;
+
+      for ( var id in tabLinks ) {
+        tabLinks[id].onclick = showTab;
+        tabLinks[id].onfocus = function() { this.blur() };
+        if ( i == 0 ) tabLinks[id].className = 'selected';
+        i++;
+      }
+
+      // Hide all content divs except the first
+      var i = 0;
+
+      for ( var id in contentDivs ) {
+        if ( i != 0 ) contentDivs[id].className = 'tabContent hide';
+        i++;
+      }
+    }
+
+    function showTab() {
+      var selectedId = getHash( this.getAttribute('href') );
+
+      // Highlight the selected tab, and dim all others.
+      // Also show the selected content div, and hide all others.
+      for ( var id in contentDivs ) {
+        if ( id == selectedId ) {
+          tabLinks[id].className = 'selected';
+          contentDivs[id].className = 'tabContent';
+        } else {
+          tabLinks[id].className = '';
+          contentDivs[id].className = 'tabContent hide';
+        }
+      }
+
+      // Stop the browser following the link
+      return false;
+    }
+
+    function getFirstChildWithTagName( element, tagName ) {
+      for ( var i = 0; i < element.childNodes.length; i++ ) {
+        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+      }
+    }
+
+    function getHash( url ) {
+      var hashPos = url.lastIndexOf ( '#' );
+      return url.substring( hashPos + 1 );
+    }
+
+    //]]>
+</script>
+
+
+
+<title>Street Fighter - Sprite Database</title>
+<script async="" type="text/javascript" src="./Street Fighter - Sprite Database_files/count.js.download"></script><link rel="preload" href="./Street Fighter - Sprite Database_files/integrator.js.download" as="script"><script type="text/javascript" src="./Street Fighter - Sprite Database_files/integrator.js.download"></script></head>
+<body><div id="overlay" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 90; width: 100%;"><a href="http://spritedatabase.net/#"><img src="./Street Fighter - Sprite Database_files/loading.gif" id="loadingImage" style="position: absolute; z-index: 150;"></a></div><div id="lightbox" style="display: none; position: absolute; z-index: 100;"><a href="http://spritedatabase.net/#" title="Click to close"><img id="lightboxImage"><img src="./Street Fighter - Sprite Database_files/close.gif" id="closeButton" style="position: absolute; z-index: 200;"></a><div id="lightboxDetails"><div id="lightboxCaption" style="display: none;"></div><div id="keyboardMsg">press <a href="http://spritedatabase.net/#" onclick="hideLightbox(); return false;"><kbd>x</kbd></a> to close</div></div></div>
+<a href="http://spritedatabase.net/top"></a><div class="column"><div class="banner"><a href="http://spritedatabase.net/"><img src="./Street Fighter - Sprite Database_files/logo17.png"></a></div>
+<div class="navbar">
+<a href="http://spritedatabase.net/news">Home</a>
+<a href="http://spritedatabase.net/contact">Contact</a>
+<a href="http://spritedatabase.net/submit">Submit</a>
+<a href="http://spritedatabase.net/download">Downloads</a>
+<a href="http://spritedatabase.net/tutorial">Articles</a>
+<a href="http://spritedatabase.net/tags">Tags</a>
+<a href="http://spritedatabase.net/forums/">Forums</a><form style="float: right; margin-top: 10px; margin-bottom: 0px;" id="tfnewsearch" name="search" method="POST" action="http://spritedatabase.net/search.php">
+<span><input type="text" id="searchtxt" name="q" placeholder="Search..."><input type="submit" value="go" id="search"></span>
+</form>
+<div style="float: right; margin-right: 20px;">
+<span style="color: #ddd; padding: 5px;">theme:</span>
+<span id="css-dark" title="Dark theme" style="background: #4C4C52; cursor: pointer;"><img src="./Street Fighter - Sprite Database_files/ct.png"></span>
+<span id="css-light" title="Light theme" style="background: #F8F8FF; cursor: pointer;"><img src="./Street Fighter - Sprite Database_files/ct.png"></span>
+</div>
+</div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="200" class="systd" valign="top">
+<div class="sysnav"><div style="background: #474E90; color: #FFF; padding: 10px;">Systems</div><a href="http://spritedatabase.net/system/3ds">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/35.gif" style="margin-bottom: 1px;"></span> 3DS</a><a href="http://spritedatabase.net/system/amiga">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/39.gif" style="margin-bottom: 1px;"></span> Amiga</a><a href="http://spritedatabase.net/system/amstradcpc">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/42.gif" style="margin-bottom: 1px;"></span> Amstrad CPC</a><a href="http://spritedatabase.net/system/arcade">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/9.gif" style="margin-bottom: 1px;"></span> Arcade</a><a href="http://spritedatabase.net/system/lynx">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/29.gif" style="margin-bottom: 1px;"></span> Atari Lynx</a><a href="http://spritedatabase.net/system/cd-i">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/33.gif" style="margin-bottom: 1px;"></span> CD-i</a><a href="http://spritedatabase.net/system/colecovision">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/10.gif" style="margin-bottom: 1px;"></span> ColecoVision</a><a href="http://spritedatabase.net/system/pc">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/17.gif" style="margin-bottom: 1px;"></span> Computer</a><a href="http://spritedatabase.net/system/dreamcast">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/30.gif" style="margin-bottom: 1px;"></span> Dreamcast</a><a href="http://spritedatabase.net/system/ds">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/2.gif" style="margin-bottom: 1px;"></span> DS</a><a href="http://spritedatabase.net/system/gameboy">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/5.gif" style="margin-bottom: 1px;"></span> Game Boy</a><a href="http://spritedatabase.net/system/gba">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/7.gif" style="margin-bottom: 1px;"></span> Game Boy Advance</a><a href="http://spritedatabase.net/system/gamegear">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/12.gif" style="margin-bottom: 1px;"></span> Game Gear</a><a href="http://spritedatabase.net/system/gamecube">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/11.gif" style="margin-bottom: 1px;"></span> GameCube</a><a href="http://spritedatabase.net/system/genesis">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/3.gif" style="margin-bottom: 1px;"></span> Genesis</a><a href="http://spritedatabase.net/system/sms">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/13.gif" style="margin-bottom: 1px;"></span> Master System</a><a href="http://spritedatabase.net/system/mobile">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/14.gif" style="margin-bottom: 1px;"></span> Mobile</a><a href="http://spritedatabase.net/system/msx">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/31.gif" style="margin-bottom: 1px;"></span> MSX</a><a href="http://spritedatabase.net/system/neogeo">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/15.gif" style="margin-bottom: 1px;"></span> Neo-Geo</a><a href="http://spritedatabase.net/system/ngp">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/6.gif" style="margin-bottom: 1px;"></span> Neo-Geo Pocket</a><a href="http://spritedatabase.net/system/nes">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/1.gif" style="margin-bottom: 1px;"></span> NES</a><a href="http://spritedatabase.net/system/n64">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/16.gif" style="margin-bottom: 1px;"></span> Nintendo 64</a><a href="http://spritedatabase.net/system/pc98">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/32.gif" style="margin-bottom: 1px;"></span> PC-98</a><a href="http://spritedatabase.net/system/ps1">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/18.gif" style="margin-bottom: 1px;"></span> PlayStation</a><a href="http://spritedatabase.net/system/ps2">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/19.gif" style="margin-bottom: 1px;"></span> PlayStation 2</a><a href="http://spritedatabase.net/system/ps3">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/34.gif" style="margin-bottom: 1px;"></span> PlayStation 3</a><a href="http://spritedatabase.net/system/psp">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/20.gif" style="margin-bottom: 1px;"></span> PlayStation Portable</a><a href="http://spritedatabase.net/system/psvita">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/40.gif" style="margin-bottom: 1px;"></span> PlayStation Vita</a><a href="http://spritedatabase.net/system/saturn">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/21.gif" style="margin-bottom: 1px;"></span> Saturn</a><a href="http://spritedatabase.net/system/32x">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/22.gif" style="margin-bottom: 1px;"></span> Sega 32X</a><a href="http://spritedatabase.net/system/sega-cd">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/23.gif" style="margin-bottom: 1px;"></span> Sega CD</a><a href="http://spritedatabase.net/system/sega-pico">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/24.gif" style="margin-bottom: 1px;"></span> Sega Pico</a><a href="http://spritedatabase.net/system/x68000">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/41.gif" style="margin-bottom: 1px;"></span> Sharp X68000</a><a href="http://spritedatabase.net/system/snes">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/4.gif" style="margin-bottom: 1px;"></span> SNES</a><a href="http://spritedatabase.net/system/tg16">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/25.gif" style="margin-bottom: 1px;"></span> TurboGrafx-16</a><a href="http://spritedatabase.net/system/tgcd">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/26.gif" style="margin-bottom: 1px;"></span> TurboGrafx-CD</a><a href="http://spritedatabase.net/system/virtualboy">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/27.gif" style="margin-bottom: 1px;"></span> Virtual Boy</a><a href="http://spritedatabase.net/system/wii">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/28.gif" style="margin-bottom: 1px;"></span> Wii</a><a href="http://spritedatabase.net/system/wiiu">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/38.gif" style="margin-bottom: 1px;"></span> Wii U</a><a href="http://spritedatabase.net/system/wonderswan">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/8.gif" style="margin-bottom: 1px;"></span> WonderSwan</a><a href="http://spritedatabase.net/system/xbox">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/37.gif" style="margin-bottom: 1px;"></span> Xbox</a><a href="http://spritedatabase.net/system/xbox360">
+	 <span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/36.gif" style="margin-bottom: 1px;"></span> Xbox 360</a><a href="http://spritedatabase.net/customs"><span style="margin-right: 3px; display: inline-block; width: 25px; text-align: center;"><img src="./Street Fighter - Sprite Database_files/customs.gif" style="margin-bottom: 1px;"></span> Customs</a></div></td><td valign="top" style="padding: 20px;"><a href="http://spritedatabase.net/system/9" style="font-size: 14px; font-weight: bold;"><img src="./Street Fighter - Sprite Database_files/9.gif" style="margin-bottom: 1px;"> Arcade</a><span class="top">» Street Fighter</span><table width="100%" style="margin-bottom: 10px;"><tbody><tr><td valign="top"><img src="./Street Fighter - Sprite Database_files/2487.png" style="-ms-interpolation-mode: nearest-neighbor; 
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: -moz-crisp-edges; 
+	image-rendering: -o-crisp-edges; 
+	image-rendering: pixelated; width: 200px; height: 100px; border: 1px solid black; margin: 2px;"><table cellpadding="2"><tbody><tr><td width="80"><b>Company:</b></td><td> <a href="http://spritedatabase.net/tag/Capcom">Capcom</a></td></tr><tr><td width="80"><b>Series:</b></td><td> <a href="http://spritedatabase.net/tag/Street%20Fighter">Street Fighter</a></td></tr><tr><td width="80"><b>Genre:</b></td><td> <a href="http://spritedatabase.net/tag/Fighting">Fighting</a></td></tr></tbody></table>
+
+<br><br>
+<b>Change view: </b> <a href="http://spritedatabase.net/game/2487&amp;view=1"><span title="In TEXT view, you will be shown a list of all games without any preview image." class="viewchanger" style="border-left: 1px solid #000; "><b>&#9776;</b> Text</span></a><a href="http://spritedatabase.net/game/2487&amp;view=2"><span title="In ICON view, all games will be shown in a grid with a preview image." class="viewchanger" style="border-left: 1px solid #000; border-right: 1px solid #000; background: #454A80; color: #FFF; cursor: default;">
+<div style="font-size: 4pt; display: inline-block;
+	letter-spacing: 1px;
+	line-height: 75%;">
+	&#9632;&#9632;&#9632;<br>
+	&#9632;&#9632;&#9632;<br>
+	&#9632;&#9632;&#9632;
+ </div>
+Icon</span></a><a href="http://spritedatabase.net/game/2487&amp;view=3"><span title="In LIST view, all games will be shown with a preview image in a single column." class="viewchanger" style="border-right: 1px solid #000;">&#8942;&#9776; List</span></a></td></tr></tbody></table><div style="display: none;"></div><div class="category">Sprites<span class="toggle" title="Show / Hide Category">-</span></div><div class="selection">
+						<span class="iconXL">
+						<a href="http://spritedatabase.net/file/21996/Adon"><img src="./Street Fighter - Sprite Database_files/21996.gif" border="0"></a><br>
+							<span class="icontext" href="file/21996/Adon">Adon</span>
+						</span>
+						<span class="iconXL">
+						<a href="http://spritedatabase.net/file/21585/Birdie"><img src="./Street Fighter - Sprite Database_files/21585.gif" border="0"></a><br>
+							<span class="icontext" href="file/21585/Birdie">Birdie</span>
+						</span>
+						<span class="iconXL">
+						<a href="http://spritedatabase.net/file/21584/Eagle"><img src="./Street Fighter - Sprite Database_files/21584.gif" border="0"></a><br>
+							<span class="icontext" href="file/21584/Eagle">Eagle</span>
+						</span>
+						<span class="iconXL">
+						<a href="http://spritedatabase.net/file/17496/Geki"><img src="./Street Fighter - Sprite Database_files/17496.gif" border="0"></a><br>
+							<span class="icontext" href="file/17496/Geki">Geki</span>
+						</span>
+						<span class="iconXL">
+						<a href="http://spritedatabase.net/file/21586/Gen"><img src="./Street Fighter - Sprite Database_files/21586.gif" border="0"></a><br>
+							<span class="icontext" href="file/21586/Gen">Gen</span>
+						</span>
+						<span class="iconXL">
+						<a href="http://spritedatabase.net/file/21587/Joe"><img src="./Street Fighter - Sprite Database_files/21587.gif" border="0"></a><br>
+							<span class="icontext" href="file/21587/Joe">Joe</span>
+						</span>
+						<span class="iconXL">
+						<a href="http://spritedatabase.net/file/17495/Ken"><img src="./Street Fighter - Sprite Database_files/17495.gif" border="0"></a><br>
+							<span class="icontext" href="file/17495/Ken">Ken</span>
+						</span>
+						<span class="iconXL">
+						<a href="http://spritedatabase.net/file/21588/Lee"><img src="./Street Fighter - Sprite Database_files/21588.gif" border="0"></a><br>
+							<span class="icontext" href="file/21588/Lee">Lee</span>
+						</span>
+						<span class="iconXL">
+						<a href="http://spritedatabase.net/file/21589/Mike"><img src="./Street Fighter - Sprite Database_files/21589.gif" border="0"></a><br>
+							<span class="icontext" href="file/21589/Mike">Mike</span>
+						</span>
+						<span class="iconXL">
+						<a href="http://spritedatabase.net/file/17497/Retsu"><img src="./Street Fighter - Sprite Database_files/17497.gif" border="0"></a><br>
+							<span class="icontext" href="file/17497/Retsu">Retsu</span>
+						</span>
+						<span class="iconXL">
+						<a href="http://spritedatabase.net/file/17462/Ryu"><img src="./Street Fighter - Sprite Database_files/17462.gif" border="0"></a><br>
+							<span class="icontext" href="file/17462/Ryu">Ryu</span>
+						</span>
+						<span class="iconXL">
+						<a href="http://spritedatabase.net/file/21995/Sagat"><img src="./Street Fighter - Sprite Database_files/21995.gif" border="0"></a><br>
+							<span class="icontext" href="file/21995/Sagat">Sagat</span>
+						</span></div><center><script async="" src="./Street Fighter - Sprite Database_files/adsbygoogle.js.download"></script>
+<!-- New Leaderboard -->
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-0004615849072972" data-ad-slot="4165001105" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent;"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:728px;height:90px;" src="./Street Fighter - Sprite Database_files/saved_resource.html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></td><td width="160" valign="top" align="right" class="rightbar"><script async="" src="./Street Fighter - Sprite Database_files/adsbygoogle.js.download"></script>
+<!-- New_Wide -->
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-0004615849072972" data-ad-slot="6759201843" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><iframe width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:160px;height:600px;" src="./Street Fighter - Sprite Database_files/saved_resource(1).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><div style="background: #474E90; color: #FFF; padding: 10px;" align="left">Extras</div>
+<div class="sysnav" style="width: 160px;" align="left">
+<a href="http://spritedatabase.net/latest">New files</a>
+<a href="http://spritedatabase.net/randomgame">Random game</a>
+<a href="http://spritedatabase.net/random">Random file</a>
+<a href="http://spritedatabase.net/contributors">Contributors</a>
+<a href="http://spritedatabase.net/affiliate">Affiliates</a>
+</div><div style="background: #474E90; color: #FFF; padding: 10px;" align="left">Latest Files</div><center>
+		<a href="http://spritedatabase.net/file/22020">
+		<div class="latesticon" title="Players">
+		<div style="background-image: url(icon2/22020.png); width: 120px; height: 65px; background-position: center center;"></div>
+		</div>
+		</a>
+		
+		
+		<a href="http://spritedatabase.net/file/22019">
+		<div class="latesticon" title="Enemies &amp; Bosses">
+		<div style="background-image: url(icon2/22019.png); width: 120px; height: 65px; background-position: center center;"></div>
+		</div>
+		</a>
+		
+		
+		<a href="http://spritedatabase.net/file/22018">
+		<div class="latesticon" title="James Bond">
+		<div style="background-image: url(icon2/22018.png); width: 120px; height: 65px; background-position: center center;"></div>
+		</div>
+		</a>
+		
+		<a href="http://spritedatabase.net/latest"><div class="sysbar" style="padding: 10px;">View All</div></a></center></td></tr></tbody></table><div class="navbar" align="right"></div><div class="footer"><center><div style="width: 800px;" align="center">Copyright © Sprite Database  2017. All rights reserved.<br><br>
+
+All game characters, graphics, sounds, and other materials are property of their original creators and copyright holders, and are provided here for private or non-commercial use. <br><br>
+
+<a href="http://spritedatabase.net/terms">Terms of use</a> - <a href="http://spritedatabase.net/privacy">Privacy Policy</a></div></center>
+</div></div>
+
+<script type="text/javascript">
+	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	var disqus_shortname = 'spritedatabase'; // required: replace example with your forum shortname
+
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+	(function () {
+		var s = document.createElement('script'); s.async = true;
+		s.type = 'text/javascript';
+		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	}());
+</script>
+
+
+</body></html>

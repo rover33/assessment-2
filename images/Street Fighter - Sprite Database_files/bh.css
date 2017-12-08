@@ -1,0 +1,27 @@
+/*--------------------- Globals ---------------------*/
+:focus { outline:none; }
+::-moz-focus-inner { border:0; }
+html, body { background-color: #fff; margin: 0; padding: 0; }
+#bh { background-color: #e1e8f6; position: absolute; top: 0px; left: 0px; width: 160px; height: 600px; overflow: hidden;
+transform-style: preserve-3d;
+perspective: 400;
+-webkit-transform-style: preserve-3d;
+-webkit-perspective: 400;		
+}
+#bh svg { position: absolute; overflow: hidden; }
+#bh div { display: block; overflow: hidden; position: absolute; background: transparent; }
+#bh img { display: block; width: 100%; height: auto; position: absolute; }
+
+#bh #cta { background: #104fa3; width: 120px; height: 21px; bottom: 46px; right: 20px; border-radius: 3px; -webkit-border-radius: 3px; }
+#bh #cta #sheen { width: 240px; height: 21px; left: 240px; opacity: .4; transform: skewX(-30deg); -webkit-transform: skewX(-30deg);
+background: -moz-linear-gradient(left,  rgba(255,255,255,0) 25%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 75%);
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 25%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 75%);
+background: linear-gradient(to right,  rgba(255,255,255,0) 25%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 75%);
+}
+
+/*--------------------- IE/Utilities ---------------------*/
+/* #bh #guide { background: transparent url('guide.png') 0 0 no-repeat; width: 100%; height: 100%; opacity: .5; } */
+#bh #border { background: transparent; border: 1px solid #000; width: 158px; height: 598px; position: absolute; top: 0; left: 0; }
+#bh #background_exit { display: block; overflow: hidden; background: transparent; width: 100%; height: 100%; position: absolute;  }
+#bh #loading { background: #e1e8f6; width: 100%; height: 100%; }
+#bh .hide { display: none; }

@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {font-family: 'Open Sans', sans-serif !important;}
+body { 
+	background-image: url('bg.png');
+	margin: 0px;
+	font-size: 13px; 
+
+}
+table {border-collapse: collapse; }
+hr {height: 0px;
+  margin: 0px;
+  border-bottom: 1px solid #222;
+  font-size: 1px;}
+td {font-size: 13px; font-family: 'Open Sans', sans-serif;}
+img { vertical-align: middle;}
+a {text-decoration: none; color: #666; font-size: 13px;}
+a:visited{color: #666;}
+a:hover {color: #999;}
+.column {
+width: 100%;
+	min-width: 1000px;
+	background:rgba(248,248,255,0.75);
+	margin: 0px auto;
+	padding: 0px;
+	color: #1e2025;
+	-webkit-box-shadow: 0px 0px 114px 26px rgba(0,0,0,0.44);
+-moz-box-shadow: 0px 0px 114px 26px rgba(0,0,0,0.44);
+box-shadow: 0px 0px 114px 26px rgba(0,0,0,0.44);
+}
+.banner
+{
+	background-image: url('banner.png');
+	padding: 20px;
+}
+.rightbar {background: #e3e3f7; border-left: 1px solid #000;}
+.sysnav {
+	margin: 0px;
+	width: 200px;
+	background: #e3e3f7;
+}
+.sysnav a
+{
+	display: block; color: #333; padding: 4px; font-size: 12px; vertical-align: middle;
+	text-decoration: none; margin: 0px; border-bottom: 1px solid #a7a8c1;
+}
+.sysnav a:hover {background: #BABBEA;}
+
+.sysnavimg
+{margin-right: 3px; display: inline-block; width: 25px; text-align: center; margin-right: 5px;}
+.sysnavimg img
+{margin-bottom: 1px;}
+
+#searchtxt 
+{
+	background-color: #EEE; 
+	color: black; 
+	border: 1px solid #000;
+	padding: 6px; padding-left: 10px; 
+	margin: 0px; 
+	
+	border-right: 0px; 
+	height: 29px; 
+	vertical-align: bottom;
+}
+#search 
+{
+	width: 35px;
+	color: white; text-align: center; font-size: 14px;
+	background: #4A54B6;
+	border: 1px solid #000; 
+	border-left: 0px;
+	margin: 0px; margin-right: 15px; 
+	font-variant: small-caps;
+	height: 29px;
+	vertical-align: middle; line-height: 25px;
+	cursor: pointer;
+}
+#search:hover, #search:active 
+{
+	background: #747CC4;
+}
+.navbar
+{
+	
+	line-height: 49px;
+	background: #1e2025;
+	height: 49px;
+	font-variant: small-caps;
+	text-shadow: 1px 1px #111;
+	margin: 0px auto;
+	padding: 0px;
+	width: 100%;
+		border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+.navbar a
+{
+	text-shadow: 1px 1px #5a5a5a;
+	font-size: 1.3em;
+	display: inline-block; 
+	color: #FFF;
+	text-decoration: none;
+	padding: 0px;
+	padding-right: 10px; padding-left: 10px;
+}
+.navbar a:hover
+{
+	background-color: #424650;
+}
+.footer
+{
+	background-image: url('footer.png');
+	padding: 20px;
+	color: #FFF; font-size: 9pt; text-align: center;
+}
+.footer a {color: #FFF;} .footer a:hover {color: #CCC;}
+
+.tag {background: #747CC4; clear: both; margin: 1px; padding: 5px; display: inline-flex; border-radius: 4px; color: white;}
+.tag:hover {background: #8890d9;}
+
+.iconXXL {display: inline-block; border: 1px solid #1E2025; background-image: url(layout/icoXXL.png); width: 230px; height: 150px; margin: 10px;}
+.iconXXL:hover {border: 1px solid #A8A4E7;}
+.iconXXL:hover .iconXXL_Text{background-color: rgba(0,0,0,0.55); text-shadow: 0 0 3px #FFF;}
+.iconXXL_BG {width: 230px; height: 150px; position: relative;}
+.iconXXL_Text {width: 218px; position: absolute; bottom: 0; padding: 6px; font-size: 12px; line-height: 11px ;color: #cdcdcd; background-color: rgba(0,0,0,0.6); text-align: center; color: #FFF;}
+.icon {  border-radius: 10px; border-color: #333; width: 120px; 
+background: url(layout/icoXL.png);
+display: inline-block; margin: 10px; border-style:solid; border-width: 2px; padding: 0px; vertical-align: top; position: relative;  cursor: pointer;}
+.iconXL {border-width: 1px; border-color: #CCC; width: 122px; 
+background-color: #FFF; color: #EEE;
+display: inline-block; margin: 10px; border-style:solid; padding: 5px; vertical-align: top; position: relative; cursor: pointer;
+
+}
+.iconXL:hover, .icon:hover, .gameicon:hover {border-color: #AAA; color: #FFF; background: #e0e0ec;}
+.iconXL img {background: url(layout/icoXL.png); border: 1px solid #DDD; border-bottom: none; }
+.icon img {padding-left: 9px; padding-right: 9px; padding-top: 24px; padding-bottom: 24px; }
+.gameicon:hover .gameicontext {background: #4e559e;}
+.iconXL:hover .icontext {background: #4e559e;}
+
+.icotextXL, .icotext
+{
+	height: 7.5ex; 
+	font-size: 11px; 
+	margin: 0px auto; color: #000; 
+	text-shadow: 1px 1px 1px 1px #7d7d7d;
+	margin-top: 5px;
+	background: #EEE;
+	border: 1px solid #DDD;
+	text-align: center;
+	display: table-cell;
+	width: 114px;
+	padding: 5px;
+	vertical-align: middle;
+}
+
+
+.icotext a, .icotextXL a { margin: 0px auto; color: #000; font-size: 11px; }
+.icotext a:visited, .icotextXL a:visited {color: #000;}
+
+.iconi { border-color: #3A3774; background: url(layout/icobg.png); display: inline-block; margin: 7px; border-style:solid; border-width: 1px; padding: 0px; vertical-align: top; }
+.iconi { border-color: #3A3774; background: url(layout/icobg.png); display: inline-block; margin: 7px; border-style:solid; border-width: 1px; padding: 0px; vertical-align: top; }
+
+.gameicon
+{
+	border-width: 1px; border-color: #CCC; 
+	width: 202px; 
+	background-color: #FFF; color: #EEE;
+	display: inline-block; margin: 9px; border-style:solid; padding: 5px; vertical-align: top; position: relative; cursor: pointer; width: 202px;'
+}
+.gameicon img
+{
+	-ms-interpolation-mode: nearest-neighbor; 
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: -moz-crisp-edges; 
+	image-rendering: -o-crisp-edges; 
+	image-rendering: pixelated; width: 200px; height: 100px; border: 1px solid #CCC;
+}
+
+/*Style used in the "latest files" area */
+.icon5 { border: 1px solid black; background: url(layout/icobg.png); adding: 0px; width: 100px; }
+
+.textview {}
+.textview a {border-bottom: 1px solid #CCC; display: block; padding: 10px;}
+.textview a:hover {background: #E6E6F0; color: #111;}
+
+.listview {}
+.listview a {border-bottom: 1px solid #CCC; display: block;}
+.listview a:hover {background: #E6E6F0; color: #111;}
+.listview img {margin: 0px; background: url(layout/icoXL.png); border: 1px solid #999; margin-right: 15px;}
+
+/*Sub-section Headings*/
+.subheading, .category 
+{
+	background: #D5D5DE;
+	color: #333; text-shadow: 1px 1px #CCC; font-size: 14px; padding: 15px; font-weight: bold; margin-bottom: 1px;
+	
+}
+.AltRow  {background: #EBECF1; padding: 10px;  font-size: 16px;}
+.category a, .category a:visited {color: #333; font-size: 15px;}
+.category a:hover {color: #555;}
+
+.toggle { width: 20px; text-align: center;
+cursor: pointer; display: inline-block;
+font-weight: bold; float: left; margin-right: 10px; background: #454a80; color: #FFF; text-shadow: 1px 1px #333; 
+}
+.toggle span {font-family: "Lucida Console", Monaco, monospace;}
+
+/*Lightbox formatting*/
+#lightbox{
+	background-color:#CCC;
+	padding: 10px;
+	}
+#lightboxDetails{
+	font-size: 0.8em;
+	padding-top: 0.4em;
+	}	
+#lightboxCaption{ float: left; font-size: 14px; font-weight: bold;}
+#keyboardMsg{ float: right; }
+#closeButton{ top: 5px; right: 5px; }
+#lightbox img{ border: none; clear: both;} 
+#overlay img{ border: none; }
+#overlay{ background-image: url(overlay.png); }
+/*End Lightbox formatting*/
+
+.dlcapsule
+{
+background: #C6C6C6;  border-width: 2px; border-color: #CCC; border-style: solid;
+border-radius: 25px; width: 580px; padding: 10px; text-align: left; margin-top: 25px; margin-bottom: 25px; background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #c6c6c6 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 0%,#c6c6c6 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 0%,#c6c6c6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c6c6c6',GradientType=0 ); /* IE6-9 */
+-webkit-box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+}
+
+.sysbar, .sysbar:visited, .sysbar a
+{
+
+background: #474e90;
+color: white; 
+padding: 5px; 
+border-radius: 4px;
+text-shadow: 1px 1px #20254b;
+margin-right: 5px;
+padding: 8px;
+-webkit-box-shadow: inset 0px 0px 0px 1px #adb4f6;
+box-shadow: inset 0px 0px 0px 1px #abd4f6;
+min-width: 50px;
+display: inline-block; 
+font-weight: bold;
+font-size: 11px;
+border: 1px solid #20254b;
+text-align: center;
+}
+.sysbar:hover {
+background: #4a54b6;
+box-shadow: inset 0px 0px 0px 1px #d6e8f6;
+color: #FFF;
+}
+.sysbar a, .sysbar a:visited {color: white; font-size: 14px;}
+
+/*Alphabetic navigation (used on System pages)*/
+.alphabar {background: #4A54B6;}
+
+#alphanav
+{
+	padding: 6px;
+	display: inline-block;
+	margin-top: 1px;
+	color: #7B81BD;
+	font-weight: bold;
+	font-size: 12px;
+	vertical-align: middle;
+}
+#alphanav a, #alphanav a:visited {color: white; font-weight: bold; vertical-align: middle; }
+#alphanav a:hover {color: #999;}
+
+/*Tabs for search result page */
+ul#tabs { list-style-type: none; margin: 30px 0 0 0; padding: 4px; }
+ul#tabs li { display: inline; }
+ul#tabs li a { color: #42454a; background-color: #D9D9DE; border: 1px solid #c9c3ba; border-bottom: none; padding: 4px 10px 4px 10px; text-decoration: none; }
+ul#tabs li a:hover { background-color: #EBEBF0; }
+ul#tabs li a.selected { color: #000; background-color: #EBEBF0; font-weight: bold; padding: 0.7em 10px 0.38em 10px; }
+div.tabContent { border: 1px solid #c9c3ba; padding: 0.5em; background-color: #EBEBF0; }
+div.tabContent.hide { display: none; }
+
+/*Expandable boxes on FAQ page */
+.faqbox {border-bottom: 1px dashed #ADADAD; padding: 5px;}
+.faqbox a, .faqbox a:visited {color: #55589D;} .faqbox a:hover {color: #6569B6;}
+.accordion-toggle {cursor: pointer; padding: 5px; margin: 0px;}
+  .accordion-content {display: none; background: white; padding: 10px; margin-top: 1px; margin-bottom: 1px; border: 1px solid #E5E5E5;}
+  .accordion-content.default {display: block;}
+  
+  /*Content headings*/
+.heading {
+	background: #474E90;
+	/*word-spacing: 5px;*/
+	text-shadow: 1px 1px #666;
+	color: #ffffff;
+	vertical-align: middle;
+	font-size: 15px;
+	font-variant: small-caps;
+	padding: 10px;
+	
+	
+}
+.heading a {color: #FFF;}
+.heading a:visited{color: #FFF;}
+.heading a:hover {color: #CCC;}
+
+.top
+{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold; font-size: 18px; display: block; margin-top: 3px; border-bottom: 1px solid #000; margin-bottom: 10px;
+}
+
+.icontext
+{
+	height: 7.5ex; 
+	font-size: 10px; 
+	margin: 0px auto;
+	text-shadow: 1px 1px 1px 1px #7d7d7d;
+	margin-top: 5px;
+	background: #474E8D;  /* #4A54B6; #EEE;*/
+	border: 1px solid #DDD;
+	text-align: center;
+	display: table-cell;
+	min-width: 110px;
+	padding: 5px;
+	vertical-align: middle;
+}
+
+
+.randombox
+{
+	padding: 10px; margin: 10px; border: 1px dashed black; background: #F6ECEC; color: #F00;
+}
+
+
+.systd
+{
+	background: #e3e3f7; border-right: 1px solid #000;
+}
+
+.viewchanger
+{
+	padding: 5px; border-top: 1px solid black; border-bottom: 1px solid #333; background: #D9D9DE;
+}
+.viewchanger:hover {background: #b3b3c1; color: #FFF;}
+
+.DL{ border: 1px solid black; background: #4A54B6; padding: 5px; margin: 1px; color: white; display: inline-flex;}
+.DL:visited{color: white;}
+.DL:hover{background: #747CC4; color: white;}
+.DLPrev {background: #FFF; padding: 10px; border: 1px solid #555;}
+
+.gameicontext 
+{
+	height: 7.5ex; 
+	font-size: 10px; 
+	margin: 0px auto;
+	text-shadow: 1px 1px 1px 1px #292929;
+	margin-top: 5px;
+	background: #474E8D; /* #4A54B6 #EEE*/ 
+	border: 1px solid #CCC;
+	text-align: center;
+	display: table-cell;
+	min-width: 190px;
+	padding: 5px;
+	vertical-align: middle;
+}
+
+.highlight {background: #B7C0DD;}
+
+.trowbottom {border-bottom: 1px dashed #CCC;}
+
+.contributoricon {width: 100px; height: 50px; border: 1px solid #666;}
+.contributoricon:hover {border-color: #999;}
+
+.newstop {background: #D5D5DE; padding: 20px; border-bottom: 1px solid #666;}
+.newsbox {border: 2px solid #666; padding: 0px; background: #f2f2ff;}
+.customicon {margin: 0px; background: url(layout/icoXL.png); border: 1px solid #999; margin-right: 15px;}
+.customicon:hover{border-color: #666;}
+.infobox {min-height: 250px; display: inline-block; border: 1px solid #555;}
+.zoombar {padding: 5px; background: #757fd9; color: #FFF; border: 1px solid #555; border-bottom: none;}
+
+.latesticon{height: 65px; width: 120px; margin: 10px; background: url(layout/icoXL.png); border: 1px solid #DDD;}

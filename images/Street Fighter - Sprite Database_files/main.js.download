@@ -1,0 +1,78 @@
+window.onload = function() {
+  'use strict';
+  var
+    bgExit,
+    hoverEffect,
+    tl,      
+    dur = 0.2;
+    
+  if (!EB.isInitialized()) {
+     EB.addEventListener(EBG.EventName.EB_INITIALIZED, initAd);
+   } else {
+     initAd();
+   }
+
+  function initAd(){
+    bgExit = document.getElementById('clickTag');
+    bgExit.addEventListener('click', onClick, false);
+    replay.addEventListener("click", replayAd);
+    hoverEffect = document.getElementById('banner');
+    hoverEffect.addEventListener('mouseover', onHover);
+    startAnimation();
+  }
+
+  function onClick(e){
+    console.log("clicked:", e.target.id);
+      EB.clickthrough();
+  }
+
+  function startAnimation(){
+    tl = new TimelineLite({paused:true,onComplete:onAdEnd});
+      TweenMax.set(cta,{boxShadow:"0px"});
+
+    tl.add("Start", 0);
+    tl.to([bg,char,glow,cta], dur, {autoAlpha:1}, "Start");
+      
+    tl.add("Slide", 0);
+    tl.to(bg, 2, {x:-160}, "Slide");
+    tl.to([char,glow], 2, {x:400}, "Slide");
+      
+    tl.add("Wall", 2);
+    tl.to(polygon, 0.6, {attr: { y:-30}}, "Wall");
+    tl.from(logo, 0.5, {autoAlpha:0,scale:0.8,x:-50, y:0,ease: Bounce.easeOut}, "Wall+=0.1");
+    tl.to(glow, 1.5, {autoAlpha:0.4,repeat:5,yoyo:true,ease: Circ.easeIn});
+
+    tl.add("Text1", 3);
+    tl.to(text1, dur, {autoAlpha:1},"Text1");
+
+    tl.add("Text2", 5.9);
+    tl.to(text1, dur, {autoAlpha:0},"Text2");
+    tl.to(text2, dur, {autoAlpha:1},"Text2");
+      
+    tl.add("Bar", 7);
+    tl.to(polygon2, 1, {attr: { x:450}}, "Bar");
+    tl.to(cta, 1, {y:10}, "Bar");
+
+    TweenMax.set(banner, {autoAlpha:1});
+    tl.play();
+  }
+    
+  function replayAd() {
+      TweenMax.set(cta,{boxShadow:"0px"});
+    tl.gotoAndPlay("Start");
+    TweenMax.set(replay, {autoAlpha:0});
+  }
+
+  function onAdEnd (){
+    TweenMax.set(cta,{boxShadow:"0px"});
+    TweenMax.to(replay, 0.3, {autoAlpha:1});
+  }
+    
+  function onHover (){
+    TweenMax.to(cta, 0.2, { boxShadow:"0px 0px 10px 3px #fe9e40", repeat:1, yoyo:true });
+    TweenMax.set(cta,{boxShadow:"0px"});
+  }
+    
+};
+
+

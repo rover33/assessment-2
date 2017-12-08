@@ -1,0 +1,71 @@
+@charset "UTF-8";
+body {
+  border:0;
+  padding:0;
+  margin:0;
+}
+
+img, #clickTag, #mask, #mask2, #mask3 {
+  position: absolute;
+  display: block;
+}
+#clickTag {
+    top:0;
+    z-index:10;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+#banner {
+  background:#FFF;
+  border: 1px solid black;
+  height:88px;
+  width:726px;
+  overflow:hidden;
+  position: relative;
+}
+
+#replay,#logo,#banner,#char,#text1,#text2,#cta,#bar,#wall,#glow {
+  visibility: hidden;
+}
+#bg, #text1, #text2, #logo, #bar, #wall, #glow {
+    left:0;
+    top:0;
+}
+#bg {
+    z-index:0;
+}
+#wall {
+    z-index:1;
+}
+#text1, #text2 {
+    z-index:5;
+}
+#char {
+    z-index:4;
+    left:-400px;
+}
+#glow {
+    z-index:3;
+    left:-400px;
+}
+#mask {
+    z-index:3;
+}
+#cta {
+    bottom: 25px;
+    left: 590px;
+}
+#cta, #logo, #mask2, #mask3 {
+    z-index:6;
+}
+#mask, #mask2, #mask3 {
+    top:0;
+    left:0;
+}
+#replay {
+  cursor: pointer;
+  left:0;
+  top:0;
+  z-index:12;
+}
