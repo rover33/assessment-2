@@ -28,9 +28,10 @@ alert('winner player 2');
 };
 
 
-
-
-
+var reset = 0;
+$('#reset').click(function(){
+    $('').html("").
+    reset = 0;
 
 
 

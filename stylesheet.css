@@ -1,32 +1,41 @@
 html {
-    height: 100%;
+    height: 100%;  /* height for the whole entire page  */
     
   }
-  Body{
+
+  Body{  /* margin 0 so no white spaces  */
     margin:0;
-    background-size: cover;
+    background-size: cover; /* background size to cover the whole screen and no repeat to have it not repeast  */
     background-repeat: no-repeat;
     min-height: 100%;
 }
 
-.container{
+.container{ /* container height and  */
     height: 100vh;
     width: 100vw;
     
 }
 
+.link{
+    float: left;
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 2rem;
+}
+
 a{
-    color:white;
+    color:white; /* color of a tag  */
     font-weight: bold;
-    height: 30rem;
+    text-align: center;
   
 }
 
-.link{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 30rem;
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 3rem;
 }
 
 #red1{
