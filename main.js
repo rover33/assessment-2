@@ -21,13 +21,16 @@ $(document).keydown(function(run) {
 
 function detectWinner(redRacer, blueRacer) {
 if(redRacer >= 1090 && blueRacer >= 50) {
-alert('winner player 1');
+    alert('winner player 1');
  } else if(redRacer <= 1090 && blueRacer <= 50){
      alert('winner player 2');
 }
 };
 
 
+    $("button").click(function(){
+        $(".link").attr("href", "page2.html");
+});
 // var reset = 0;
 // $('#reset').click(function(){
 //     $('').html("").
