@@ -4,9 +4,9 @@
 // keycode 90 moves #red1 across the screen.
 
 $(document).keydown(function(run) { 
-    let redRacer = $(window).width() - ($('#red1').offset().right + $('#red1').outerWidth());
+    let redRacer = $('.container').innerWidth()-($('#red1').offset().left + $('#red1').outerWidth());                        //$(window).width() - ($('#red1').offset().right + $('#red1').outerWidth());
     let blueRacer = $(window).width() - ($('#blue1').offset().left + $('#blue1').outerWidth());
-    if(run.keyCode == 37 && redRacer >= 771) { //runes keycode for right arrow and stops redRacer when he hits the wall
+    if(run.keyCode == 37 && redRacer <= 1100) { //runes keycode for right arrow and stops redRacer when he hits the wall
         $("#red1").animate({right: '+=2vw'})
         console.log(redRacer);
     } else if (run.keyCode == 90 && blueRacer >= 50) { //runes keycode for right arrow and stops blueRacer when he hits the wall
@@ -20,18 +20,18 @@ $(document).keydown(function(run) {
 
 
 function detectWinner(redRacer, blueRacer) {
-if(redRacer >= 771 && blueRacer <= 50) {
-alert('winner player 2');
-} else if(redRacer <= 771 && blueRacer >=50){
-    alert('winner player 1');
+if(redRacer >= 1090 && blueRacer >= 50) {
+alert('winner player 1');
+ } else if(redRacer <= 1090 && blueRacer <= 50){
+     alert('winner player 2');
 }
 };
 
 
-var reset = 0;
-$('#reset').click(function(){
-    $('').html("").
-    reset = 0;
+// var reset = 0;
+// $('#reset').click(function(){
+//     $('').html("").
+//     reset = 0;
 
 
 
