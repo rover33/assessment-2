@@ -1,17 +1,28 @@
-html {
-    height: 100vh;  height for the whole entire page 
-    margin:0;
-    
-  }
+ Body{ height:80%;
+    background-size: cover; /* background size to cover the whole screen and no repeat to have it not repeast */
+    background-repeat: no-repeat;
+    min-height: 100vh; ; /* margin 0 so no white spaces  */
+   
+}
 
-  Body{  /* margin 0 so no white spaces  */
-    margin:0;
+#firstpage{
+    background: url("images/streetfighter.jpg");
+    margin: 0;
     background-size: cover; /* background size to cover the whole screen and no repeat to have it not repeast  */
     background-repeat: no-repeat;
     min-height: 100vh;
 }
 
-.container{ /* container height and  */
+#secondpage{
+    background: url("images/bridge.gif");
+    margin: 0;
+    
+}
+
+.container{
+    display:flex;
+    align-content: center;
+     /* container height and  */
     height: 100vh;
     width: 100vw;
     
@@ -24,7 +35,7 @@ h1{
     font-weight: bold;
     color: white;
     font-size: 3rem;
-    margin-top: 17rem;
+    padding-top: 17rem;
 }
 .link{
     display: flex;
