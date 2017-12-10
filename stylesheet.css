@@ -1,23 +1,9 @@
- Body{ height:80%;
+ Body{ height: 100%;
     background-size: cover; /* background size to cover the whole screen and no repeat to have it not repeast */
     background-repeat: no-repeat;
-    min-height: 100vh; ; /* margin 0 so no white spaces  */
-   
-}
-
-#firstpage{
-    background: url("images/streetfighter.jpg");
-    margin: 0;
-    background-size: cover; /* background size to cover the whole screen and no repeat to have it not repeast  */
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
-
-#secondpage{
-    background: url("images/bridge.gif");
-    margin: 0;
-    
-}
+    min-height: 100vh; /* margin 0 so no white spaces /*  */
+ }
+ 
 
 .container{
     display:flex;
