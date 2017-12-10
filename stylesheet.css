@@ -10,27 +10,27 @@
 
 .container{
     height: 100vh;
-    /* width: 100vw; */
+    /* height: 100vw; */
     
     
 }
-.centerElements{
+.centerElements{ /* centering the header and click button so they match up. */
   padding-top: 15rem;
 }
 
-.header{
+.header{  /* h1 positioning  */
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-h1{
+h1{  /* h1 styling  */
     font-weight: bold;
     color: white;
     font-size: 3rem;
 }
 
-.link{
+.link{  /* href positioning  */
     display: flex;
     justify-content: center;
 }
@@ -41,7 +41,7 @@ a{
     font-size: 1rem;
 }
   
-input[type=submit]{
+button{  /* button styling  */
     height: 5rem;
     width: 15rem;
     color:black; /* color of a tag  */
@@ -50,21 +50,21 @@ input[type=submit]{
     font-size: 1rem;
 }
 
-#red1{
+#red1{  /* positiong for the character 'player 1'  */
 position: absolute;
 right: 0;
 bottom: 8vh;
 transform: rotateY(180deg);
 }
 
-#blue1{
+#blue1{ /* positiong for the character 'player 2'  */
 color:blue;
 position: absolute;
 bottom: 8vh;
 
 }
 
-nav{
+nav{ /* nav styling and positioning  */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;

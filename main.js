@@ -19,7 +19,7 @@ $(document).keydown(function(run) {
 );
 
 
-function detectWinner(redRacer, blueRacer) {
+function detectWinner(redRacer, blueRacer) { //function to detect which player won.
 if(redRacer >= 1090 && blueRacer >= 50) {
     alert('winner player 1');
  } else if(redRacer <= 1090 && blueRacer <= 50){
@@ -28,8 +28,8 @@ if(redRacer >= 1090 && blueRacer >= 50) {
 };
 
 
-    $("button").click(function(){
-        $(".link").attr("href", "page2.html");
+$("button").on('click', function(){  //adding a click button using jquery to go to the second page.
+        window.location.href="page2.html";
 });
 // var reset = 0;
 // $('#reset').click(function(){
