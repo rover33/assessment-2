@@ -1,32 +1,37 @@
- Body{ height: 100%;
-    background-size: cover; /* background size to cover the whole screen and no repeat to have it not repeast */
-    background-repeat: no-repeat;
+ Body{
     min-height: 100vh; /* margin 0 so no white spaces /*  */
+    margin: 0;
  }
  
 
 .container{
-    display:flex;
-    align-content: center;
-     /* container height and  */
+    display: flex;
     height: 100vh;
     width: 100vw;
+    background-image: url( "images/bridge.gif");
+    background-size: cover; /* background size to cover the whole screen and no repeat to have it not repeast */
+    background-repeat: no-repeat;
     
 }
 
-
-h1{
+.header{
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+
+h1{
     font-weight: bold;
     color: white;
     font-size: 3rem;
     padding-top: 17rem;
 }
+
 .link{
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    height: 50vh;
+    padding-top:10rem; 
 }
 
 a{
@@ -55,3 +60,20 @@ position: absolute;
 bottom: 8vh;
 
 }
+
+nav{
+    display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+  
+    color: white;
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+li{
+   padding: .5rem; 
+   font-size: 2rem;
+}
+
+@media  screen (max-width: 600px), (min-width: 520px);
