@@ -7,10 +7,10 @@ $(document).keydown(function(run) {
     let redRacer = $('.container').innerWidth()-($('#red1').offset().left + $('#red1').outerWidth());                        //$(window).width() - ($('#red1').offset().right + $('#red1').outerWidth());
     let blueRacer = $(window).width() - ($('#blue1').offset().left + $('#blue1').outerWidth());
     if(run.keyCode == 37 && redRacer <= 1100) { //runes keycode for right arrow and stops redRacer when he hits the wall
-        $("#red1").animate({right: '+=2vw'})
+        $("#red1").animate({right: '+=2vw'}, -200)
         console.log(redRacer);
     } else if (run.keyCode == 90 && blueRacer >= 50) { //runes keycode for right arrow and stops blueRacer when he hits the wall
-        $("#blue1").animate({left: '+=2vw'})
+        $("#blue1").animate({left: '+=2vw'}, -200)
         console.log(blueRacer)
     }; 
         detectWinner(redRacer, blueRacer); //detects who one.......small problem is if they key keeps getting pressed way before the edge it will go past the box and not declare winner
